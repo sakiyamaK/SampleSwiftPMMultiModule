@@ -1,6 +1,7 @@
 import UIKit
 import DeclarativeUIKit
 @_exported import Models
+@_exported import Resources
 
 public class HomeViewController: UIViewController {
     
@@ -32,11 +33,24 @@ public extension HomeViewController {
         self.declarative {
             UIScrollView.vertical {
                 UIStackView.vertical {
-                    posts.compactMap {
-                        UILabel($0.text)
-                            .height(100)
-                            .padding()
-                            .border(color: .gray, width: 1)
+                    posts.compactMap { post in
+                        UIStackView.horizontal {
+                            UIImageView(image: Resources.Image.onepiece)
+                                .contentMode(.scaleAspectFit)
+                                .size(width: 80, height: 80)
+                                .customSpacing(10)
+                            UILabel(post.text)
+                                .contentPriorities(.init(vertical: .required))
+
+                            UIView.spacer()
+                            
+                            UIImageView(UIImage(systemName: "greaterthan")?.withTintColor(.gray, renderingMode: .alwaysOriginal))
+                        }
+                        .alignment(.center)
+//                        .distribution(.equalCentering)
+                        .height(100)
+                        .padding()
+                        .border(color: .gray, width: 1)
                     }
                 }
             }

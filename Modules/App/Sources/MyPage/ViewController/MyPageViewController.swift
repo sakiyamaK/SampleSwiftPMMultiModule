@@ -1,6 +1,7 @@
 import UIKit
 import DeclarativeUIKit
 @_exported import Models
+@_exported import Resources
 
 public final class MyPageViewController: UIViewController {
     
@@ -29,10 +30,8 @@ public extension MyPageViewController {
         self.view.backgroundColor = .white
         
         self.declarative {
-            UILabel(user.name)
-                .textColor(.red)
-                .font(UIFont.systemFont(ofSize: 32))
-                .center()
+            UIImageView(Resources.Image.onepieceUsopp)
+                .contentMode(.scaleAspectFit)
         }
     }
 }
