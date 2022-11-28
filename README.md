@@ -1,0 +1,3 @@
+# SampleSwiftPMMultiModule
+
+SwiftPackageManagerでマルチモジュール、マルチプロジェクト構成の練習
