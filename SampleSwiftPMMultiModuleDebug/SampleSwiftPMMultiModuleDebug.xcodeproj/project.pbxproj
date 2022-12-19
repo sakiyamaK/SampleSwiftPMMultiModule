@@ -11,16 +11,19 @@
 		B6024A2329334F10005505CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6024A2229334F10005505CA /* SceneDelegate.swift */; };
 		B6024A2A29334F11005505CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6024A2929334F11005505CA /* Assets.xcassets */; };
 		B6024A2D29334F11005505CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6024A2B29334F11005505CA /* LaunchScreen.storyboard */; };
+		B6A7CBE0294B745200D13D01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A7CBDF294B745200D13D01 /* GoogleService-Info.plist */; };
 		B6C813CF29339DB200588228 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B6C813CE29339DB200588228 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43DA160D42D553739F423716 /* Pods_SampleSwiftPMMultiModuleDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSwiftPMMultiModuleDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6024A1D29334F10005505CA /* SampleSwiftPMMultiModuleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSwiftPMMultiModuleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6024A2029334F10005505CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6024A2229334F10005505CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B6024A2929334F11005505CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6024A2C29334F11005505CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6024A2E29334F11005505CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A7CBDF294B745200D13D01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				B6024A2029334F10005505CA /* AppDelegate.swift */,
-				B6024A2229334F10005505CA /* SceneDelegate.swift */,
 				B6024A2929334F11005505CA /* Assets.xcassets */,
-				B6024A2B29334F11005505CA /* LaunchScreen.storyboard */,
+				B6A7CBDF294B745200D13D01 /* GoogleService-Info.plist */,
 				B6024A2E29334F11005505CA /* Info.plist */,
+				B6024A2B29334F11005505CA /* LaunchScreen.storyboard */,
+				B6024A2229334F10005505CA /* SceneDelegate.swift */,
 			);
 			path = SampleSwiftPMMultiModuleDebug;
 			sourceTree = "<group>";
@@ -67,6 +71,7 @@
 		B6024A342933503C005505CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43DA160D42D553739F423716 /* Pods_SampleSwiftPMMultiModuleDebug.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			files = (
 				B6024A2D29334F11005505CA /* LaunchScreen.storyboard in Resources */,
 				B6024A2A29334F11005505CA /* Assets.xcassets in Resources */,
+				B6A7CBE0294B745200D13D01 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

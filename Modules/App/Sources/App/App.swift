@@ -1,14 +1,19 @@
 import UIKit
 import DeclarativeUIKit
+import Firebase
+import RealmSwift
 import Home
 import MyPage
 
 public struct App {
-    public init() { }
+    public init() {
+        FirebaseApp.configure()
+        let realm = try! Realm()
+    }
 }
 
 public extension App {
-    static func viewController() -> UIViewController {
+    func viewController() -> UIViewController {
 
         let tab = UITabBarController()
 

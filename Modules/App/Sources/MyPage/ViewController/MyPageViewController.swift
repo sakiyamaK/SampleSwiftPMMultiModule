@@ -1,7 +1,7 @@
 import UIKit
 import DeclarativeUIKit
 @_exported import Models
-@_exported import Resources
+@_exported import Assets
 
 public final class MyPageViewController: UIViewController {
     
@@ -30,8 +30,19 @@ public extension MyPageViewController {
         self.view.backgroundColor = .white
         
         self.declarative {
-            UIImageView(Resources.Image.onepieceUsopp)
-                .contentMode(.scaleAspectFit)
+            UIStackView.vertical {
+                UIImageView(Resources.Image.onepieceUsopp)
+                    .contentMode(.scaleAspectFit)
+                    .customSpacing(20)
+                
+                UIButton("クラッシュ")
+                    .titleColor(.blue)
+                    .add(target: self, for: .touchUpInside) {_ in
+                        fatalError("clash")
+                    }
+                    .contentPriorities(.init(vertical: .required))
+                    .center()
+            }
         }
     }
 }

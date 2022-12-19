@@ -1,7 +1,7 @@
 import UIKit
 import DeclarativeUIKit
 @_exported import Models
-@_exported import Resources
+@_exported import Assets
 
 public class HomeViewController: UIViewController {
     
